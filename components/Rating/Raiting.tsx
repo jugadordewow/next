@@ -1,4 +1,3 @@
-
 import cn from "classnames";
 import styles from "./Raiting.module.css";
 import {RaitingProps} from "./Raiting.props";
@@ -16,10 +15,6 @@ export const Raiting = ({isEditable = false, raiting, setRaiting,...props}:Raiti
         const updatedArray = raitingArray.map((r:JSX.Element, i: number) =>{
             return (
                 <StarIcon
-                    className={cn(styles.star,{
-                        [styles.fill]: i < currentRaiting
-                    })}
-
                 />
             )
         })
@@ -33,4 +28,6 @@ export const Raiting = ({isEditable = false, raiting, setRaiting,...props}:Raiti
         </div>
     )
 }
+
+
 

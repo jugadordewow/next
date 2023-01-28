@@ -1,8 +1,8 @@
 import {Htag} from "../components/Htag/Htag";
-import {Button, Raiting, Tag} from "../components";
+import {Button, Tag} from "../components";
 import {Paragraph} from "../components/Paragraph/Paragraph";
 import {useState} from "react";
-
+import {Raiting} from "../components/Rating/Raiting";
 
 export default function Home():JSX.Element {
   const [counter, setCounter] = useState<number>(0);
