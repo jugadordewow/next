@@ -6,6 +6,7 @@ import {Raiting} from "../components/Rating/Raiting";
 
 export default function Home():JSX.Element {
   const [counter, setCounter] = useState<number>(0);
+  const [raiting, setRaiting] = useState<number>(2)
   return (
     <>
         <Htag tag={"h1"}>{counter}</Htag>
@@ -15,7 +16,12 @@ export default function Home():JSX.Element {
         <Paragraph size={"medium"}>Medium text</Paragraph>
         <Paragraph size={"large"}>Large text</Paragraph>
         <Tag size={"small"} color={'red'}>RED</Tag>
-        <Raiting raiting={4} />
+        <Raiting raiting={raiting} isEditable setRaiting={setRaiting}/>
     </>
   )
 }
+// Вопросы к понедельнику, Что такое, зачем нужны и как делать(решать):
+// - Сквош коммитов
+// - Ребэйз ветки
+// - Конфликт веток
+// - Конфликт автомержа веток
